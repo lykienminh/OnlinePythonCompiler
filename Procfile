@@ -1,1 +1,1 @@
-web: gunicorn pythoncompiler9.py
+web: gunicorn --pythonpath pythoncompiler9 pythoncompiler9.wsgi --log-file -
