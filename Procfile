@@ -1,1 +1,1 @@
-web: gunicorn pythoncompiler9.wsgi:application
+web: gunicorn pythoncompiler9.wsgi
