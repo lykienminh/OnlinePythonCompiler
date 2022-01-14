@@ -1,5 +1,3 @@
-release: python manage.py makemigrations --no-input
-release: python manage.py migrate --no-input 
-
-web: python manage.py runserver 0.0.0.0:5000
-
+web: gunicorn pythoncompiler9.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
