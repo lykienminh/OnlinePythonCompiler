@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'OnlinePythonCompiler.wsgi.application'
+WSGI_APPLICATION = 'pythoncompiler9.wsgi.application'
 
 
 # Database
