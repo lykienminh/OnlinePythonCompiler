@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_framework.authtoken',
     'pythoncompiler9.apps.PycompilerConfig',
 ]
 
@@ -74,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pythoncompiler9.wsgi.application'
+WSGI_APPLICATION = 'OnlinePythonCompiler.wsgi.application'
 
 
 # Database
