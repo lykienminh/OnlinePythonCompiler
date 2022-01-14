@@ -1,4 +1,5 @@
 release: python manage.py makemigrations --no-input
-release: python manage.py migrate --no-input
+release: python manage.py migrate --no-input 
 
-web: gunicorn pythoncompiler9:app
+web: python manage.py runserver 0.0.0.0:5000
+
