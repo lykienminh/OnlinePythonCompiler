@@ -6,6 +6,5 @@ from . import views
 urlpatterns = [
     path('', views.index, name='indexpage'),
     path('runcode', views.runcode, name='runcode'),
-    path('runcode', views.runcode, name='runcode'),
-    path('python/', views.api_python, name='api_python'),
+    path('python', views.api_python, name='api_python'),
 ]
