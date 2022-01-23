@@ -7,6 +7,10 @@ heroku git:remote -a pythoncompiler9
 
 git remote show heroku
 
+git push heroku master
+
+git remote add origin  https://github.com/lykienminh/OnlinePythonCompiler.git
+
 ..\Scripts\activate
 
 1 - heroku config:set DISABLE_COLLECTSTATIC=1 // Not sure if this was necessary eventually as I guess problem with collect static was due to no module found error.
