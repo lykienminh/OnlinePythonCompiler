@@ -47,7 +47,7 @@ from rest_framework.response import Response
 @permission_classes((AllowAny,))
 def api_python(request):
     try:
-        codeareadata = request.data['codearea']
+        codeareadata = request.data['code']
         #save original standard output reference
         original_stdout = sys.stdout
         sys.stdout = open('file.txt', 'w')  #change the standard output to the file we created
@@ -65,13 +65,15 @@ def api_python(request):
         #finally read output from file and save in output variable
 
         output = open('file.txt', 'r').read()
+        outputMessage = "Success"
 
     except Exception as e:
         # to return error in the code
         sys.stdout = original_stdout
         output = str(e)
+        outputMessage = "Error"
         
-    return Response({'output': output})
+    return Response({'message': outputMessage, 'output': output})
 
-    # "codearea": "for i in range (2):\n\tprint(\"Hello World!\")\n\tprint(\"Hi\")"
+    # "code": "for i in range (2):\n\tprint(\"Hello World!\")\n\tprint(\"Hi\")"
 
