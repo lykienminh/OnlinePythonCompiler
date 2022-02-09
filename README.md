@@ -40,7 +40,7 @@ py -m pip install Django
 
 or in [./requirements.txt](./requirements.txt)
 
-**3 - Deploy**
+**3 - Deploy**  
 Create requirements.txt
 ```
 pip freeze > requirements.txt
