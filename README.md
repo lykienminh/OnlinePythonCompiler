@@ -61,6 +61,36 @@ git push heroku master
 **4 - Some config if app not run**
 - heroku config:set DISABLE_COLLECTSTATIC=1 // Not sure if this was necessary eventually as I guess problem with collect static was due to no module found error.
 
+# CALL API ./python #  
+1 . Success
+- Input 1
+```json
+{
+ "code": "for i in range (2):\n\tprint(\"Hello World!\")\n\tprint(\"Hi\")"
+}
+```
+- Output 1
+```json
+{
+    "message": "Success",
+    "output": "Hello World!\nHi\nHello World!\nHi\n"
+}
+```
+2 . Error
+- Input 2
+```json
+{
+ "code": "for i in range (2):\n\tprindt(\"Hello World!\")\n\tprint(\"Hi\")"
+}
+```
+- Output 2
+```json
+{
+    "message": "Error",
+    "output": "name 'prindt' is not defined"
+}
+```
+
 <!--
 heroku git:remote -a pythoncompiler9
 
