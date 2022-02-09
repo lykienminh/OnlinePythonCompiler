@@ -15,21 +15,20 @@ Activate the environment
 
 2 - Install package
 
-> asgiref==3.4.1
-> backports.zoneinfo==0.2.1
-> dj-database-url==0.5.0
-> dj-static==0.0.6
-> Django==4.0.1
-> django-heroku==0.3.1
-> django-toolbelt==0.0.1
-> djangorestframework==3.13.1
-> gunicorn==20.1.0
-> psycopg2==2.9.3
-> pytz==2021.3
-> sqlparse==0.4.2
-> static3==0.7.0
-> tzdata==2021.5
-> whitenoise==5.3.0
+> asgiref==3.4.1___backports.zoneinfo==0.2.1
+dj-database-url==0.5.0
+dj-static==0.0.6
+Django==4.0.1
+django-heroku==0.3.1
+django-toolbelt==0.0.1
+djangorestframework==3.13.1
+gunicorn==20.1.0
+psycopg2==2.9.3
+pytz==2021.3
+sqlparse==0.4.2
+static3==0.7.0
+tzdata==2021.5
+whitenoise==5.3.0
 
 
 
