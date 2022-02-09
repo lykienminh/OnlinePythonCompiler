@@ -1,7 +1,19 @@
 # OnlinePythonCompiler
-Online Python Compiler 
 
-Python Compiler API /python
+## Python Compiler API /python
+
+1. Setting up a virtual environment 
+
+Create a virtual environment
+```
+...\> py -m venv project-name
+```
+Activate the environment
+```
+...\> project-name\Scripts\activate.bat
+```
+
+
 
 heroku git:remote -a pythoncompiler9
 
