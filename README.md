@@ -1,8 +1,8 @@
-# OnlinePythonCompiler
+# OnlinePythonCompiler #
 
-## Python Compiler API /python
+## Python Compiler API /python ##
 
-1.Setting up a virtual environment 
+1. Setting up a virtual environment 
 
 Create a virtual environment
 ```
